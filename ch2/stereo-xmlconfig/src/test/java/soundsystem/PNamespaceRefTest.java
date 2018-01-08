@@ -11,8 +11,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations="classpath:META-INF/spring/soundsystem.xml")
-public class CDPlayerXMLConfigTest {
+@ContextConfiguration
+public class PNamespaceRefTest {
 
   @Rule
   public final StandardOutputStreamLog log = new StandardOutputStreamLog();
@@ -20,14 +20,6 @@ public class CDPlayerXMLConfigTest {
   @Autowired
   private MediaPlayer player;
 
-  @Autowired
-  private CompactDisc cd;
-
-  @Test
-  public void cdShouldNotBeNull() {
-    assertNotNull(cd);
-  }
-  
   @Test
   public void play() {
     player.play();
