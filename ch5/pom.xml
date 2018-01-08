@@ -11,7 +11,6 @@
 
     <artifactId>ch5</artifactId>
     <name>ch5</name>
-    <packaging>war</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
